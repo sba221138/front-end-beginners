@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8"/> 
+        <!-- 告訴瀏覽器 網頁編碼格式 -->
+        <title>JavaScript 流程控制: 迴圈</title>
+    </head>
+    <body>
+        <script>
+            // break 指令
+            // let n = 0;
+            // while (n<=10){
+            //     console.log(n);
+            //     n++;
+            //     break; // 強迫結束迴圈
+            // }
+            // let n = 0;
+            // while (n<=5){
+            //     if (n==3){
+            //         break; // 等於3的時候強迫中斷，離開這個迴圈
+            //     }
+            //     console.log(n);
+            //     n++;
+            // }
+            // continue 指令
+            // for (let n = 0;n<5;n++){
+            //     if (n==3){
+            //         continue; // 強迫回到迴圈上方，忽略continue 下面迴圈的指令，進入下一圈
+            //     }
+            //     console.log(n);
+            // }
+            for (let n = 0;n<5;n++){
+                if (n%2==0){ // 如果n 除以 2的餘數 等於0 ; n = 偶數 被跳過
+                    continue; // 強迫回到迴圈上方，忽略continue 下面迴圈的指令，進入下一圈
+                }
+                console.log(n);
+            }
+        </script>
+    </body>
+</html>
